@@ -1,0 +1,24 @@
+section#page h2 {
+	padding: 20px 0;
+}
+
+section#page h2,
+section#page h3 {
+	font-weight: 500;
+}
+
+section#page h3 {
+	font-weight: 700;
+}
+
+section#page p {
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+section#page .body {
+	border: 1px solid #808080;
+	padding: 25px 20px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}

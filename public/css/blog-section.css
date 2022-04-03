@@ -1,0 +1,81 @@
+#blog-section .container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 100%;
+	grid-gap: 20px;
+	margin: auto;
+	padding: 50px;
+}
+
+#blog-section .section {
+	min-height: 374px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#blog-section .section .thumbnail-wrapper {
+	display: block;
+	width: 100%;
+	height: 280px;
+	overflow: hidden;
+	position: relative;
+}
+
+#blog-section .section .thumbnail {
+	display: block;
+	background-size: cover;
+	background-position: center;
+	height: 280px;
+	background-repeat: no-repeat;
+	transition: all 500ms ease;
+	width: 100%;
+}
+
+#blog-section .section .thumbnail-wrapper .posted-date {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 5px 10px;
+	z-index: 2;
+	font-size: 11px;
+	font-weight: 300;
+}
+
+#blog-section .section:hover .thumbnail {
+	transform: scale(1.05);
+}
+
+#blog-section .section .body {
+	height: 30%;
+	margin-top: 20px;
+}
+
+#blog-section .section .body a,
+#blog-section .section .body p {
+	padding: 0 25px;
+	color: #282828;
+	font-weight: 400;
+}
+
+#blog-section .section .body a {
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+}
+
+#blog-section .section .body p {
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+#blog-section .section .body a:hover {
+	color: #FC6464;
+	text-decoration: underline;
+}
+
+#blog-section .section .body a.read-more {
+	font-size: 13px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}

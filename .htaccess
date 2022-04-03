@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  # Rewrite every URL and add /public to it's end
+  RewriteRule ^$ public/ [L]
+  RewriteRule (.*) public/$1 [L]
+</IfModule>

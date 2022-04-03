@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+	Options -MultiViews
+	RewriteEngine On
+	RewriteBase /glamour/public
+	#Only rewrite the url if the url is not the name of a file or a directory in the current directory
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>
